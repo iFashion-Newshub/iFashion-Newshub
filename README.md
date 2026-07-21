@@ -1,4 +1,4 @@
-# Press Gallery — 新闻精选集
+# iFashion Newshub — 时尚新闻精选
 
 VOGUE 杂志风格的新闻链接合集网站，纯静态，部署于 GitHub Pages。
 

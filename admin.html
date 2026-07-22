@@ -116,11 +116,11 @@ textarea { resize: vertical; min-height: 60px; }
     <h3>发布设置</h3>
     <div style="display:flex;gap:0.5rem;align-items:end;flex-wrap:wrap;">
       <div style="flex:1;min-width:260px;"><label>GitHub Token</label><input type="password" id="ghToken" placeholder="输入你的 Personal Access Token"></div>
-      <div style="flex:1;min-width:200px;"><label>仓库路径</label><input id="ghRepo" value="press-gallery/press-gallery" placeholder="owner/repo"></div>
+      <div style="flex:1;min-width:200px;"><label>仓库路径</label><input id="ghRepo" value="iFashion-Newshub/iFashion-Newshub" placeholder="owner/repo"></div>
       <button class="btn btn-outline btn-small" onclick="saveSettings()">保存设置</button>
     </div>
     <p style="font-size:0.72rem;color:#999;margin-top:0.5rem;">
-      Token 需勾选 <strong>repo</strong> 权限。<a href="https://github.com/settings/tokens/new?scopes=repo&description=press-gallery-admin" target="_blank">点此创建 Classic Token</a>（过期选 No expiration）。
+      Token 需勾选 <strong>repo</strong> 权限。<a href="https://github.com/settings/tokens/new?scopes=repo&description=iFashion-Newshub-admin" target="_blank">点此创建 Classic Token</a>（过期选 No expiration）。
       设置保存在浏览器本地，不会上传到服务器。
     </p>
   </div>
@@ -781,7 +781,7 @@ function publishToGitHub() {
     });
   }).then(function(r) {
     if (!r.ok) throw new Error('发布失败 (HTTP ' + r.status + ')');
-    toast('发布成功 ✓ GitHub Pages 将在 1-2 分钟内更新');
+    toast('发布成功 ✓ Cloudflare Pages 将在 1-2 分钟内更新');
   }).catch(function(e) {
     toast('发布失败: ' + e.message);
     console.error(e);
